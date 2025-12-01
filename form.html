@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Форма реєстрації</h1>
+
+    <form id="registerForm" novalidate>
+        <!-- Ім'я -->
+        <div class="form-group">
+            <label for="name">Ім’я</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім’я">
+            <small class="error" id="nameError"></small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            <small class="error" id="emailError"></small>
+        </div>
+
+        <!-- Пароль -->
+        <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" placeholder="Мінімум 6 символів">
+            <small class="error" id="passwordError"></small>
+        </div>
+
+        <!-- Повтор пароля -->
+        <div class="form-group">
+            <label for="confirmPassword">Повтор пароля</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторіть пароль">
+            <small class="error" id="confirmPasswordError"></small>
+        </div>
+
+        <!-- Кнопка -->
+        <button type="submit" class="btn-submit">Надіслати</button>
+
+        <!-- Повідомлення про успіх -->
+        <p class="success-message" id="successMessage"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
